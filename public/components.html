@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Browse electronic components available in CircuitCraft."
+    >
+
+    <title>
+        Component Library - CircuitCraft
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+    <a
+        class="logo"
+        href="/"
+    >
+        Circuit<span>Craft</span>
+    </a>
+
+
+    <nav class="desktop-nav">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#builder">
+            Project Builder
+        </a>
+
+        <a
+            href="/components"
+            class="active-nav"
+        >
+            Components
+        </a>
+
+        <a href="/#features">
+            Features
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- COMPONENT LIBRARY HERO -->
+
+    <section class="library-hero">
+
+        <div class="library-hero-content">
+
+            <p class="small-title">
+                COMPONENT DATABASE
+            </p>
+
+
+            <h1>
+                Component
+                <span>Library.</span>
+            </h1>
+
+
+            <p>
+                Search controllers, sensors, motor drivers,
+                displays, power modules and other electronics
+                stored in the CircuitCraft database.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- COMPONENT LIBRARY -->
+
+    <section class="component-library">
+
+
+        <!-- SEARCH AND SORT -->
+
+        <div class="library-controls">
+
+
+            <div class="component-search-box">
+
+                <span class="search-icon">
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    id="componentSearch"
+                    placeholder="Search ESP32, sensor, motor driver..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <select
+                id="sortComponents"
+                class="library-sort"
+            >
+
+                <option value="name">
+                    Sort: Name
+                </option>
+
+                <option value="price-low">
+                    Price: Low to High
+                </option>
+
+                <option value="price-high">
+                    Price: High to Low
+                </option>
+
+                <option value="category">
+                    Sort: Category
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- CATEGORY FILTERS -->
+
+        <div
+            id="categoryFilters"
+            class="category-filters"
+        >
+        </div>
+
+
+
+        <!-- RESULT HEADER -->
+
+        <div class="library-result-header">
+
+            <div>
+
+                <h2>
+                    Available Components
+                </h2>
+
+                <p id="libraryStatus">
+                    Loading component database...
+                </p>
+
+            </div>
+
+
+            <span
+                id="libraryCount"
+                class="count-badge"
+            >
+                0 components
+            </span>
+
+        </div>
+
+
+
+        <!-- COMPONENT CARDS -->
+
+        <div
+            id="componentLibraryGrid"
+            class="library-grid"
+        >
+        </div>
+
+
+
+        <!-- EMPTY STATE -->
+
+        <div
+            id="libraryEmpty"
+            class="library-empty"
+        >
+
+            <div>
+                🔍
+            </div>
+
+            <h3>
+                No components found
+            </h3>
+
+            <p>
+                Try another search term or category.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- COMPONENT DETAILS POPUP -->
+
+<dialog
+    id="componentDialog"
+    class="component-dialog"
+>
+
+    <div class="dialog-header">
+
+        <div>
+
+            <p
+                id="dialogCategory"
+                class="small-title"
+            >
+            </p>
+
+            <h2 id="dialogName">
+            </h2>
+
+        </div>
+
+
+        <button
+            id="closeDialog"
+            class="dialog-close"
+            aria-label="Close component details"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+
+    <div
+        id="dialogContent"
+        class="dialog-content"
+    >
+    </div>
+
+</dialog>
+
+
+
+<footer>
+
+    <div>
+
+        <strong>
+            CircuitCraft
+        </strong>
+
+        <span>
+            © 2026 • Electronics Project Builder
+        </span>
+
+    </div>
+
+
+    <p>
+        Verify exact datasheets before final hardware assembly.
+    </p>
+
+</footer>
+
+
+
+<script src="components-page.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+node_modules/
+database/circuitcraft.db
+database/circuitcraft.db-shm
+database/circuitcraft.db-wal
+.env
