@@ -4,7 +4,7 @@ const db = require("./database/db");
 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 // Allow JSON requests
@@ -155,7 +155,7 @@ app.get("/api/components", (req, res) => {
     }
 );
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
 
     console.log("");
     console.log("=================================");
@@ -163,14 +163,6 @@ app.listen(PORT, () => {
     console.log("=================================");
     console.log("");
 
-    console.log(
-        `Website: http://localhost:${PORT}`
-    );
-
-    console.log(
-        `API Test: http://localhost:${PORT}/api/test`
-    );
-
-    console.log("");
+    console.log(`CircuitCraft running on port ${PORT}`);
 
 });
