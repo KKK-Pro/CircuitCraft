@@ -1,65 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CircuitCraft - smart electronics component finder, compatibility checker and ESP32 pin planner.">
 
-    <title>CircuitCraft - Electronics Project Builder</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="style.css">
+    <!-- =========================================
+         BASIC SEO
+    ========================================== -->
+
+    <title>
+        CircuitCraft - Electronics Project Builder & Component Finder
+    </title>
+
+    <meta
+        name="description"
+        content="CircuitCraft is a smart electronics project builder that recommends components, estimates project cost, checks hardware compatibility and creates ESP32 GPIO pin plans."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="author"
+        content="CircuitCraft"
+    >
+
+    <meta
+        name="theme-color"
+        content="#07111f"
+    >
+
+
+    <!-- =========================================
+         CANONICAL URL
+    ========================================== -->
+
+    <link
+        rel="canonical"
+        href="https://circuitcraft-os6k.onrender.com/"
+    >
+
+
+    <!-- =========================================
+         OPEN GRAPH
+         WhatsApp / LinkedIn / Facebook sharing
+    ========================================== -->
+
+    <meta
+        property="og:title"
+        content="CircuitCraft - Electronics Project Builder"
+    >
+
+    <meta
+        property="og:description"
+        content="Build electronics projects smarter. Get component recommendations, cost estimates, compatibility checks and ESP32 GPIO planning."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:url"
+        content="https://circuitcraft-os6k.onrender.com/"
+    >
+
+    <meta
+        property="og:site_name"
+        content="CircuitCraft"
+    >
+
+
+    <!-- =========================================
+         TWITTER / X SHARING
+    ========================================== -->
+
+    <meta
+        name="twitter:card"
+        content="summary"
+    >
+
+    <meta
+        name="twitter:title"
+        content="CircuitCraft - Electronics Project Builder"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Component recommendations, compatibility checking and ESP32 GPIO planning for electronics projects."
+    >
+
+
+    <!-- =========================================
+         STRUCTURED DATA FOR SEARCH ENGINES
+    ========================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "CircuitCraft",
+        "url": "https://circuitcraft-os6k.onrender.com/",
+        "description": "CircuitCraft helps users build electronics projects by recommending components, estimating costs, checking compatibility and creating ESP32 GPIO pin plans.",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser"
+    }
+    </script>
+
+
+    <!-- =========================================
+         STYLESHEET
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
+
 <header class="site-header">
-    <a class="logo" href="#home" aria-label="CircuitCraft home">
+
+    <a
+        class="logo"
+        href="#home"
+        aria-label="CircuitCraft home"
+    >
         Circuit<span>Craft</span>
     </a>
 
+
     <nav class="desktop-nav">
-        <a href="#home">Home</a>
-        <a href="#builder">Project Builder</a>
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#builder">
+            Project Builder
+        </a>
+
         <a href="/components">
-    Components
-</a>
-        <a href="#features">Features</a>
-        <a href="#resultsSection">Project</a>
+            Components
+        </a>
+
+        <a href="#features">
+            Features
+        </a>
+
+        <a href="#resultsSection">
+            Project
+        </a>
+
     </nav>
+
 </header>
+
+
 
 <main>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section
+        class="hero"
+        id="home"
+    >
+
         <div class="hero-content">
 
+
             <div class="eyebrow">
+
                 <span class="dot"></span>
+
                 SMART ELECTRONICS PROJECT BUILDER
+
             </div>
 
+
             <h1>
+
                 Build Electronics
-                <span>Smarter.</span>
+
+                <span>
+                    Smarter.
+                </span>
+
             </h1>
 
+
             <p class="hero-description">
-                Describe what you want to build. CircuitCraft recommends components,
-                estimates cost, checks compatibility and creates an ESP32 GPIO plan.
+
+                Describe what you want to build.
+                CircuitCraft recommends components,
+                estimates cost, checks compatibility
+                and creates an ESP32 GPIO plan.
+
             </p>
 
-            <div class="builder-box" id="builder">
+
+
+            <!-- PROJECT BUILDER -->
+
+            <div
+                class="builder-box"
+                id="builder"
+            >
+
+
                 <div class="builder-heading">
+
+
                     <div>
-                        <p class="builder-label">Describe your project</p>
-                        <p class="builder-hint">
-                            Mention the controller, sensors, motors or features you need.
+
+                        <p class="builder-label">
+                            Describe your project
                         </p>
+
+
+                        <p class="builder-hint">
+
+                            Mention the controller,
+                            sensors, motors or features
+                            you need.
+
+                        </p>
+
                     </div>
 
-                    <span class="prototype-badge">Prototype</span>
+
+                    <span class="prototype-badge">
+                        Prototype
+                    </span>
+
+
                 </div>
+
+
 
                 <textarea
                     id="projectInput"
@@ -67,208 +261,554 @@
                     placeholder="Example: I want to build an ESP32 obstacle avoiding robot with OLED and buzzer"
                 ></textarea>
 
+
+
                 <div class="quick-examples">
-                    <button class="example-chip" data-example="I want to build an ESP32 obstacle avoiding robot">
+
+
+                    <button
+                        class="example-chip"
+                        data-example="I want to build an ESP32 obstacle avoiding robot"
+                    >
                         Obstacle Robot
                     </button>
 
-                    <button class="example-chip" data-example="I want to build an ESP32 line following robot with 3 IR sensors">
+
+                    <button
+                        class="example-chip"
+                        data-example="I want to build an ESP32 line following robot with 3 IR sensors"
+                    >
                         Line Follower
                     </button>
 
-                    <button class="example-chip" data-example="I want to build an ESP32 temperature and humidity monitor with OLED">
+
+                    <button
+                        class="example-chip"
+                        data-example="I want to build an ESP32 temperature and humidity monitor with OLED"
+                    >
                         Weather Monitor
                     </button>
 
-                    <button class="example-chip" data-example="I want to build an ESP32 smart irrigation system with soil moisture sensor and water pump">
+
+                    <button
+                        class="example-chip"
+                        data-example="I want to build an ESP32 smart irrigation system with soil moisture sensor and water pump"
+                    >
                         Smart Irrigation
                     </button>
+
+
                 </div>
 
-                <button id="buildButton" class="primary-button">
-                    <span>Build My Project</span>
-                    <span aria-hidden="true">→</span>
+
+
+                <button
+                    id="buildButton"
+                    class="primary-button"
+                >
+
+                    <span>
+                        Build My Project
+                    </span>
+
+                    <span aria-hidden="true">
+                        →
+                    </span>
+
                 </button>
 
+
+
                 <p class="builder-note">
-                    Component prices are sample estimates for development and can be replaced with live pricing later.
+
+                    Component prices are sample
+                    estimates for development and
+                    can be replaced with live pricing
+                    later.
+
                 </p>
+
+
             </div>
+
         </div>
+
     </section>
 
 
-    <!-- FEATURES / CATEGORIES -->
-    <section class="features-section" id="features">
+
+    <!-- =========================================
+         FEATURES / PROJECT CATEGORIES
+    ========================================== -->
+
+    <section
+        class="features-section"
+        id="features"
+    >
+
+
         <div class="section-heading">
-            <p class="small-title">EXPLORE</p>
-            <h2>Start from a project category</h2>
-            <p>
-                Click any category to load an example into the project builder.
+
+            <p class="small-title">
+                EXPLORE
             </p>
+
+            <h2>
+                Start from a project category
+            </h2>
+
+            <p>
+                Click any category to load an
+                example into the project builder.
+            </p>
+
         </div>
+
+
 
         <div class="category-grid">
-            <button class="category-card" data-example="I want to build an ESP32 obstacle avoiding robot">
-                <span class="category-icon">🤖</span>
-                <span class="category-copy">
-                    <strong>Robotics</strong>
-                    <small>Motors, sensors and autonomous systems.</small>
+
+
+            <button
+                class="category-card"
+                data-example="I want to build an ESP32 obstacle avoiding robot"
+            >
+
+                <span class="category-icon">
+                    🤖
                 </span>
+
+                <span class="category-copy">
+
+                    <strong>
+                        Robotics
+                    </strong>
+
+                    <small>
+                        Motors, sensors and autonomous systems.
+                    </small>
+
+                </span>
+
             </button>
 
-            <button class="category-card" data-example="I want to build an ESP32 IoT temperature and humidity monitor with OLED">
-                <span class="category-icon">📡</span>
-                <span class="category-copy">
-                    <strong>IoT</strong>
-                    <small>Connected sensors and smart devices.</small>
+
+
+            <button
+                class="category-card"
+                data-example="I want to build an ESP32 IoT temperature and humidity monitor with OLED"
+            >
+
+                <span class="category-icon">
+                    📡
                 </span>
+
+                <span class="category-copy">
+
+                    <strong>
+                        IoT
+                    </strong>
+
+                    <small>
+                        Connected sensors and smart devices.
+                    </small>
+
+                </span>
+
             </button>
 
-            <button class="category-card" data-example="I want to build an ESP32 embedded system with OLED and buzzer">
-                <span class="category-icon">🔌</span>
-                <span class="category-copy">
-                    <strong>Embedded Systems</strong>
-                    <small>ESP32, Arduino and peripherals.</small>
+
+
+            <button
+                class="category-card"
+                data-example="I want to build an ESP32 embedded system with OLED and buzzer"
+            >
+
+                <span class="category-icon">
+                    🔌
                 </span>
+
+                <span class="category-copy">
+
+                    <strong>
+                        Embedded Systems
+                    </strong>
+
+                    <small>
+                        ESP32, Arduino and peripherals.
+                    </small>
+
+                </span>
+
             </button>
 
-            <button class="category-card" data-example="I want to build a smart irrigation system with soil moisture sensor and water pump">
-                <span class="category-icon">🌱</span>
-                <span class="category-copy">
-                    <strong>Automation</strong>
-                    <small>Sensors, relays and control systems.</small>
+
+
+            <button
+                class="category-card"
+                data-example="I want to build a smart irrigation system with soil moisture sensor and water pump"
+            >
+
+                <span class="category-icon">
+                    🌱
                 </span>
+
+                <span class="category-copy">
+
+                    <strong>
+                        Automation
+                    </strong>
+
+                    <small>
+                        Sensors, relays and control systems.
+                    </small>
+
+                </span>
+
             </button>
 
-            <button class="category-card" data-example="I want to build an ESP32 security alarm with PIR sensor and buzzer">
-                <span class="category-icon">🛡️</span>
-                <span class="category-copy">
-                    <strong>Security</strong>
-                    <small>Motion sensing and alert projects.</small>
+
+
+            <button
+                class="category-card"
+                data-example="I want to build an ESP32 security alarm with PIR sensor and buzzer"
+            >
+
+                <span class="category-icon">
+                    🛡️
                 </span>
+
+                <span class="category-copy">
+
+                    <strong>
+                        Security
+                    </strong>
+
+                    <small>
+                        Motion sensing and alert projects.
+                    </small>
+
+                </span>
+
             </button>
 
-            <button class="category-card" data-example="I want to build an Arduino Bluetooth controlled robot">
-                <span class="category-icon">📱</span>
-                <span class="category-copy">
-                    <strong>Wireless Control</strong>
-                    <small>Bluetooth controlled electronics.</small>
+
+
+            <button
+                class="category-card"
+                data-example="I want to build an Arduino Bluetooth controlled robot"
+            >
+
+                <span class="category-icon">
+                    📱
                 </span>
+
+                <span class="category-copy">
+
+                    <strong>
+                        Wireless Control
+                    </strong>
+
+                    <small>
+                        Bluetooth controlled electronics.
+                    </small>
+
+                </span>
+
             </button>
+
+
         </div>
+
     </section>
 
 
-    <!-- RESULTS -->
-    <section class="results-section" id="resultsSection">
+
+    <!-- =========================================
+         PROJECT RESULTS
+    ========================================== -->
+
+    <section
+        class="results-section"
+        id="resultsSection"
+    >
+
 
         <div class="results-header">
+
+
             <div>
-                <p class="small-title">PROJECT ANALYSIS</p>
-                <h2 id="projectTitle">Recommended Components</h2>
-                <p id="projectSummary" class="result-subtitle"></p>
+
+                <p class="small-title">
+                    PROJECT ANALYSIS
+                </p>
+
+                <h2 id="projectTitle">
+                    Recommended Components
+                </h2>
+
+                <p
+                    id="projectSummary"
+                    class="result-subtitle"
+                ></p>
+
             </div>
 
+
+
             <div class="project-stat">
-                <span>Estimated Cost</span>
-                <strong id="totalCost">₹0</strong>
+
+                <span>
+                    Estimated Cost
+                </span>
+
+                <strong id="totalCost">
+                    ₹0
+                </strong>
+
             </div>
+
+
         </div>
+
 
 
         <!-- PROJECT TOOLBAR -->
+
         <div class="project-toolbar">
-            <button id="copyBomButton" class="secondary-button">
+
+
+            <button
+                id="copyBomButton"
+                class="secondary-button"
+            >
                 Copy BOM
             </button>
 
-            <button id="resetProjectButton" class="ghost-button">
+
+            <button
+                id="resetProjectButton"
+                class="ghost-button"
+            >
                 Reset Project
             </button>
+
+
         </div>
 
 
-        <!-- COMPONENTS -->
+
+        <!-- =========================================
+             BILL OF MATERIALS
+        ========================================== -->
+
         <div class="result-block">
+
+
             <div class="block-heading">
+
+
                 <div>
-                    <p class="small-title">BILL OF MATERIALS</p>
-                    <h3>Recommended Components</h3>
+
+                    <p class="small-title">
+                        BILL OF MATERIALS
+                    </p>
+
+                    <h3>
+                        Recommended Components
+                    </h3>
+
                 </div>
 
-                <span id="componentCount" class="count-badge">0 items</span>
+
+                <span
+                    id="componentCount"
+                    class="count-badge"
+                >
+                    0 items
+                </span>
+
+
             </div>
 
-            <div id="componentResults" class="component-results"></div>
+
+            <div
+                id="componentResults"
+                class="component-results"
+            ></div>
+
+
         </div>
 
 
-        <!-- ADD COMPONENT -->
+
+        <!-- =========================================
+             ADD COMPONENT
+        ========================================== -->
+
         <div class="result-block add-component-block">
+
+
             <div class="block-heading">
+
+
                 <div>
-                    <p class="small-title">CUSTOMIZE</p>
-                    <h3>Add another component</h3>
+
+                    <p class="small-title">
+                        CUSTOMIZE
+                    </p>
+
+                    <h3>
+                        Add another component
+                    </h3>
+
                 </div>
+
+
             </div>
+
+
 
             <div class="add-component-row">
-                <select id="addComponentSelect" aria-label="Select component to add"></select>
 
-                <button id="addComponentButton" class="secondary-button">
+
+                <select
+                    id="addComponentSelect"
+                    aria-label="Select component to add"
+                ></select>
+
+
+                <button
+                    id="addComponentButton"
+                    class="secondary-button"
+                >
                     + Add Component
                 </button>
+
+
             </div>
+
+
         </div>
 
 
-        <!-- COMPATIBILITY -->
+
+        <!-- =========================================
+             COMPATIBILITY CHECK
+        ========================================== -->
+
         <div class="result-block compatibility-section">
+
+
             <div class="block-heading">
+
+
                 <div>
-                    <p class="small-title">COMPATIBILITY CHECK</p>
-                    <h3>Electrical & Connection Analysis</h3>
+
+                    <p class="small-title">
+                        COMPATIBILITY CHECK
+                    </p>
+
+                    <h3>
+                        Electrical & Connection Analysis
+                    </h3>
+
                 </div>
+
+
             </div>
+
 
             <div id="compatibilityResults"></div>
+
+
         </div>
 
 
-        <!-- PIN PLANNER -->
+
+        <!-- =========================================
+             ESP32 PIN PLANNER
+        ========================================== -->
+
         <div class="result-block pin-planner-section">
+
+
             <div class="block-heading">
+
+
                 <div>
-                    <p class="small-title">PIN PLANNER</p>
-                    <h3>Suggested ESP32 GPIO Assignment</h3>
-                    <p class="pin-description">
-                        CircuitCraft allocates GPIOs for supported peripherals and flags unavailable assignments.
+
+                    <p class="small-title">
+                        PIN PLANNER
                     </p>
+
+                    <h3>
+                        Suggested ESP32 GPIO Assignment
+                    </h3>
+
+                    <p class="pin-description">
+
+                        CircuitCraft allocates GPIOs
+                        for supported peripherals and
+                        flags unavailable assignments.
+
+                    </p>
+
                 </div>
+
+
             </div>
 
+
             <div id="pinPlannerResults"></div>
+
+
         </div>
 
+
     </section>
+
 
 </main>
 
 
+
+<!-- =========================================
+     FOOTER
+========================================== -->
+
 <footer>
+
+
     <div>
-        <strong>CircuitCraft</strong>
-        <span>© 2026 • Electronics Project Builder</span>
+
+        <strong>
+            CircuitCraft
+        </strong>
+
+        <span>
+            © 2026 • Electronics Project Builder
+        </span>
+
     </div>
 
+
     <p>
-        Prototype recommendations must be verified against the exact component datasheets before hardware assembly.
+
+        Prototype recommendations must be
+        verified against the exact component
+        datasheets before hardware assembly.
+
     </p>
+
+
 </footer>
+
 
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
